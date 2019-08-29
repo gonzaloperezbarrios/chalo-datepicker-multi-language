@@ -9,9 +9,8 @@
 > - npm install chalo-datepicker-multi-language
 > - yarn add chalo-datepicker-multi-language
 
-
 ## What does it?
-
+![Example](doc/image.png)
  - Show a box field displaying a calendar.
  - It accepts the followings the date format:
 	 - MM/DD/YYYY

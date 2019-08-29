@@ -1,6 +1,6 @@
 {
   "private": false,
-  "name": "chalo-datepicker-multi-language",
+  "name": "chalo-datepicker-multi-language-test",
   "version": "1.0.2",
   "description": "A React component to build a customized UI of https://react-day-picker.js.org",
   "main": "build/index.js",

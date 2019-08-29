@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 //Import package InputDatePicker
 import InputDatePicker from 'chalo-datepicker-multi-language';
+//Import style example
+import './style.css';
 
 // Implementation example
 class ExampleImplentation extends Component {
@@ -18,14 +20,16 @@ class ExampleImplentation extends Component {
     }
 
     render () {
-        return (<InputDatePicker
-                    //Translate to English
-                    locale="en-US"
-                     //Translate to Spanish
-                    //locale="es"
-                    date={this.state.date}
-                    handleChange={this.handleChangeDateto}
-                />)
+        return (<div className="container">
+                    <InputDatePicker
+                        //Translate to English
+                        locale="en-US"
+                        //Translate to Spanish
+                        //locale="es"
+                        date={this.state.date}
+                        handleChange={this.handleChangeDateto}
+                    />
+                </div>)
     }
 }
 

@@ -1,42 +1,12 @@
 import React from 'react';
 import DayPickerInput from 'react-day-picker/DayPickerInput';
 import MomentLocaleUtils from 'react-day-picker/moment';
-import dateFnsFormat from 'date-fns/format';
-import dateFnsParse from 'date-fns/parse';
-import { DateUtils } from 'react-day-picker';
+import {formatDate, parseDate} from './utils/parse.datepicker';
+import _enumFormatDate from './utils/enum.datepicker';
 import 'moment/locale/es';
 import 'moment/locale/en-SG';
 import 'react-day-picker/lib/style.css';
-import  './component/app.datepicker.css';
-
-let formatSelect = 'MM/DD/YYYY';
-
-const parseDate = (str, format, locale) => {
-  formatSelect = 'MM/DD/YYYY';
-  const formatOK = /^\d{1,2}([/])\d{1,2}\1\d{4}$/.test(str);
-  if (formatOK) {
-    if (/^\d{1}([/])\d{1}\1\d{4}$/.test(str)) {
-      formatSelect = 'M/D/YYYY';
-    }
-
-    if (/^\d{2}([/])\d{1}\1\d{4}$/.test(str)) {
-      formatSelect = 'MM/D/YYYY';
-    }
-
-    if (/^\d{1}([/])\d{2}\1\d{4}$/.test(str)) {
-      formatSelect = 'M/DD/YYYY';
-    }
-    const parsed = dateFnsParse(str, formatSelect, { locale });
-    if (DateUtils.isDate(parsed)) {
-      return parsed;
-    }
-  }
-  return undefined;
-};
-
-const formatDate = (date, format, locale) => {
-  return dateFnsFormat(date, formatSelect, { locale });
-};
+import  './styles/datepicker.css';
 
 const InputDatePicker = props => {
   const { date, handleChange, locale } = props;
@@ -46,9 +16,9 @@ const InputDatePicker = props => {
       value={date}
       onDayChange={handleChange}
       formatDate={formatDate}
-      format="MM/DD/YYYY"
+      format={_enumFormatDate.MM_DD_YYYY}
       parseDate={parseDate}
-      placeholder="MM/DD/YYYY"
+      placeholder={_enumFormatDate.MM_DD_YYYY}
       dayPickerProps={{
         localeUtils: MomentLocaleUtils,
         locale: localeInput === 'en-US' ? 'en-SG' : 'es'
