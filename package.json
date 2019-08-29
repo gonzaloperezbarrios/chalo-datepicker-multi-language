@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "chalo-datepicker-multi-language",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A React component to build a customized UI of https://react-day-picker.js.org",
   "main": "build/index.js",
   "peerDependencies": {
@@ -38,6 +38,7 @@
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "css-loader": "^3.2.0",
     "style-loader": "^1.0.0",
+    "url-loader": "^2.1.0",
     "webpack-cli": "^3.3.7"
   }
 }
