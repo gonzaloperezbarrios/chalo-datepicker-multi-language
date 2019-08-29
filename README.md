@@ -24,7 +24,7 @@
 
 ## How to implated it?
 
-You can see the example complete in directory  **/example/exampleImplement.js**
+You can see the example complete in directory  **src/example/ExampleImplementation.js**
 
 ```JavaScript
     // src/example/ExampleImplementation.js

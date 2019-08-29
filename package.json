@@ -13,8 +13,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "ddkk.com"
+    "url": "https://github.com/gonzaloperezbarrios/chalo-datepicker-multi-language.git"
   },
+  "keywords": [
+    "react",
+    "calander",
+    "DatePicker"
+  ],
   "author": "Gonzalo J Perez",
   "license": "ISC",
   "dependencies": {
