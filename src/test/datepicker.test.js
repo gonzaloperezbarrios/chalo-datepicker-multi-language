@@ -31,6 +31,6 @@ test("InputDatePicker validated format M/D/YYYY date", () => {
 });
 
 test("InputDatePicker validated format MM/D/YYYY date", () => {
-  const value = parseDate("09/3/2019", "MM/D/YYYY", "en-US");
+  const value = parseDate("09/2/2019", "MM/D/YYYY", "en-US");
   expect(value).toStrictEqual(new Date("2019-09-02T05:00:00.000Z"));
 });
