@@ -36,6 +36,11 @@ module.exports = {
     ]
   },
   externals: {
-    react: "commonjs react"
+    react: "commonjs react",
+    "date-fns": "date-fns",
+    moment: "moment",
+    "prop-types": "prop-types",
+    "react-day-picker": "react-day-picker",
+    "react-dom": "react-dom"
   }
 };
